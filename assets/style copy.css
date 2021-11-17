@@ -49,7 +49,11 @@ main {
   padding: 30px;
 }
 
-.left-section {
+section {
+  display: flex;
+}
+
+section .left-section {
   background-color: #845A6D;
   border-radius: 20px;
   padding: 5px;
@@ -60,7 +64,7 @@ main {
   color: #6E75A8;
 }
 
-.right-section {
+section .right-section {
   background-color: #845A6D;
   border-radius: 20px;
   padding: 10px;
@@ -69,7 +73,7 @@ main {
   justify-content: center;
 }
 
-.right-section img {
+.seo {
   max-width: 30%;
   padding: 20px;
   align-items: center;
@@ -77,11 +81,5 @@ main {
 
 .right-section h3, 
 .right-section a {
-  text-align: center;
-}
-
-footer {
-  padding: 10px;
-  background-color: #3E1929;
   text-align: center;
 }
