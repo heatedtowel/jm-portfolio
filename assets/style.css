@@ -7,6 +7,7 @@ html, * {
 :root {
   --primary: #3E1929;
   --secondary: #845A6D;
+  --background: #D7CDCC;
   --text: #D7CDCC;
 } 
 
@@ -19,14 +20,23 @@ header {
   background-color: #3E1929;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+header img {
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute;
+  border-radius: 10px;
 }
 
 header h1 {
   color: var(--text);
+  margin-left: 60px;
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: var(--background);
 }
 
 nav a {
