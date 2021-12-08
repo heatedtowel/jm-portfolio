@@ -2,7 +2,7 @@
 
 Create and design a professional resume to showcase skill and talents to potential employers that are looking to fill both full and part time jobs. Highlighting the strongest work to date as well as any deployed web applications
 
-<img src="assets\images\Document.png" alt="image" width="300"/>
+<img src="assets\images\Document (1).png" alt="image" width="300"/>
 
 ## Link
 
