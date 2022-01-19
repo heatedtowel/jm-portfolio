@@ -12,9 +12,14 @@ html, * {
   --text: #010101;
 } 
 
+a {
+  text-decoration: none;
+}
+
 body{
   background-color: var(--secondary);
   min-height: 100vh;
+  width: 100%;
 }
 
 .flex {
@@ -27,7 +32,6 @@ body{
 
 .header{
   background-color: var(--primary);
-  margin-bottom: 2rem;
 }
 
 img{
@@ -38,7 +42,6 @@ img{
 
 img:hover{
   filter: saturate(30%);
-  transform: scale(1.1);
 }
 
 .grid {
@@ -46,7 +49,7 @@ img:hover{
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--secondary);
   gap: 1.5rem;
-  padding: 4rem;
+  padding: 0rem 4rem 2rem 4rem;
   justify-items: center;
 }
 
@@ -54,8 +57,10 @@ img:hover{
   text-align: center;
 }
 
-.container > h1 {
+.repoName {
+  color: var(--text);
   padding: 1.5rem;
+  font-size: 2rem;
 }
 
 .linksContainer {
@@ -69,7 +74,6 @@ img:hover{
 }
 
 .navTitle {
-  text-decoration: none;
   font-size: 1.2rem;
 
   color: var(--text);
@@ -91,5 +95,15 @@ img:hover{
 
 .headerTitle {
   font-size: 1.7rem;
-  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1rem 3rem 1rem 1rem
+  } 
+  
+  body {
+    width: fit-content;
+  }
 }
